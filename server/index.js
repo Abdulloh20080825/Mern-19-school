@@ -6,7 +6,7 @@ const generateJWTToken = require('./helpers/generateToken');
 const { authenticateToken } = require('./middleware/auth');
 const cors = require('cors');
 const app = express();
-const PORT = 4040 || process.env.PORT;
+const PORT = process.env.PORT || 4040;
 
 app.use(
 	cors({
